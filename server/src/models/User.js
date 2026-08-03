@@ -31,7 +31,9 @@ const userSchema = new mongoose.Schema(
       city: { type: String, default: '' },
       postcode: { type: String, default: '' },
       countryCode: { type: String, default: 'GBR' }
-    }
+    },
+    resetPasswordToken: { type: String, default: null },
+    resetPasswordExpire: { type: Date, default: null }
   },
   { timestamps: true }
 );
